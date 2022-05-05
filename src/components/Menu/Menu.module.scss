@@ -1,17 +1,142 @@
 @import "./src/sass/variables";
+@import "./src/sass/mixins";
 .menuContainer{
+  position: relative;
   padding: 24px 0 24px 15px;
+  width: 100%;
   max-width: 260px;
   height: 100%;
   background-color: #081A51;
+}
+
+.headerLogo{
+  padding-left: 15px;
+}
+.headerContainerLeftBtn{
+  position: absolute;
+ right: -20px;
+  z-index: 2;
+  cursor: pointer;
+}
+.mainMenuContainer{
+  margin-top: 60px;
 
 }
+.secondaryMenuContainer{
+  margin-top: 30px;
+}
 .mainMenuTitle{
-  //font-family: $primaryFontMedium;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-family: $primaryFontMedium;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-
   color: #51CBFF;
+}
+.mainMenuNavItem{
+  color: inherit;
+  text-decoration: inherit;
+
+}
+
+.mainMenuItem{
+  padding: 16px 14px;
+  display: flex;
+  align-items: center;
+  &:hover{
+
+    background-color: #1B2B65;
+    > svg {
+      fill: rgba(255, 255, 255, 0.2);
+      stroke: white;
+      //circle: red;
+    }
+    span{
+      color: $white;
+    }
+
+  }
+
+}
+.mainMenuItemDashboardIcon{
+  margin-right: 10px;
+
+}
+.mainMenuItemText{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: $colorMainFonts;
+
+}
+.thirdMenuContainer{
+  margin-top: 30px;
+  margin-bottom: 170px;
+}
+.helpSectionContainer{
+  max-height: 125px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 204px;
+  background: #1B2B65;
+  border-radius: 8px;
+  padding: 32px 19px 17px;
+  margin-bottom: 24px;
+}
+.circleBg{
+  position: absolute;
+  top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #AABBFA;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.helpSectionTitle{
+  margin-bottom: 20px;
+  font-family: $primaryFontMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: $white;
+
+}
+.helpSectionBoldWord{
+  font-family: $primaryFontBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  color: $white;
+}
+.helpSectionButton{
+  @include btn-reset();
+  padding: 12px 25px;
+  width: 100%;
+  background: #017EFA;
+  border-radius: 6px;
+  font-family: $primaryFontMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
