@@ -14,7 +14,7 @@ import {NavLink} from "react-router-dom";
 import {ReactComponent as LeftArrowBtn} from "../../assets/arrowLeftButton.svg";
 
 
-const Menu = () => {
+const Menu = ({setIsShowMenu}) => {
   return (
     <div className={styles.menuContainer}>
       <nav>
@@ -24,7 +24,7 @@ const Menu = () => {
         >
           <Logo className={styles.headerLogo}/>
         </NavLink>
-        <LeftArrowBtn  className={styles.headerContainerLeftBtn}/>
+        <LeftArrowBtn onClick={()=>setIsShowMenu(prev=>!prev)}  className={styles.headerContainerLeftBtn}/>
         <div className={styles.mainMenuContainer}>
           <p className={styles.mainMenuTitle}>MAIN MENU</p>
           <NavLink
