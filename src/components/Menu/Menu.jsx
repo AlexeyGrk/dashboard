@@ -4,9 +4,21 @@ import {ReactComponent as Logo} from "../../assets/dashLogo.svg";
 
 const Menu = () => {
   return (
-    <aside className={styles.menuContainer}>
-      <Logo/>
-    </aside>
+    <div className={styles.menuContainer}>
+      <nav>
+        <a href='/'>
+          <Logo/>
+        </a>
+        <div className={styles.mainMenuContainer}>
+          <p className={styles.mainMenuTitle}>MAIN MENU</p>
+
+
+
+        </div>
+      </nav>
+
+
+    </div>
   );
 };
 
