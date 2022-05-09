@@ -297,6 +297,11 @@
   color: #1C1F37;
 }
 .demographicAudienceInfoProcentage{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: $primaryFontBold;
   font-style: normal;
   font-weight: 700;
@@ -305,7 +310,7 @@
   /* identical to box height */
   text-align: center;
   background-color: #E6F2FE;
-  padding: 10px 6px;
+  //padding: 10px 6px;
   border-radius: 50%;
 
   color: #017EFA;
@@ -397,6 +402,20 @@
   border-radius: 4px;
   margin-right: 12px;
 
+}
+.contentScheduleAgendaLeftInfoItemAbbrP{
+  padding: 0 5px;
+  background-color: #7659FF;
+  color: $white;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.contentScheduleAgendaLeftInfoItemAbbrD{
+  padding: 0 5px;
+  background-color: #FD269E;
+  color: $white;
+  border-radius: 4px;
+  margin-right: 12px;
 }
 .contentScheduleAgendaLeftDots{
   font-size: 20px;

@@ -165,13 +165,13 @@ const DashboardCharts = () => {
               <div className={styles.contentScheduleAgendaLeftInfoItem}>
                 <DeskIcon/>
                 <span className={styles.contentScheduleAgendaLeftInfoItemTitle}>Post A Travel Poster</span>
-                <span className={styles.contentScheduleAgendaLeftInfoItemAbbr}>P</span>
+                <span className={styles.contentScheduleAgendaLeftInfoItemAbbrP}>P</span>
                 <span  className={styles.contentScheduleAgendaLeftDots}>...</span>
               </div>
               <div className={styles.contentScheduleAgendaLeftInfoItem}>
                 <DeskIcon/>
                 <span className={styles.contentScheduleAgendaLeftInfoItemTitle}>Mars Travel Manual for Mark...</span>
-                <span className={styles.contentScheduleAgendaLeftInfoItemAbbr}>D</span>
+                <span className={styles.contentScheduleAgendaLeftInfoItemAbbrD}>D</span>
                 <span className={styles.contentScheduleAgendaLeftDots}>...</span>
               </div>
               <div className={styles.contentScheduleAgendaLeftInfoItem}>
