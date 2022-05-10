@@ -12,7 +12,6 @@ import {ReactComponent as SmallGreenCircle} from "../../assets/greenSmallCircle.
 import {ReactComponent as SmallPurpleCircle} from "../../assets/purpleSmallCircle.svg";
 import {ReactComponent as LineDiagramm} from "../../assets/lineDiagramm.svg";
 import {ReactComponent as SmallArrowRight} from "../../assets/arrowRightSmall.svg";
-import {ReactComponent as ScheduleChart} from "../../assets/scheduleChart.svg";
 import {ReactComponent as DeskIcon} from "../../assets/DeskIcon.svg";
 import {ReactComponent as AudienceUserAvatar} from "../../assets/Ellipse 105.svg";
 import {ReactComponent as LikeIcon} from "../../assets/bx_bxs-like.svg";
