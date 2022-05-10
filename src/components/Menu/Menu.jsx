@@ -17,119 +17,125 @@ import {ReactComponent as LeftArrowBtn} from "../../assets/arrowLeftButton.svg";
 const Menu = ({setIsShowMenu}) => {
   return (
     <div className={styles.menuContainer}>
-      <nav>
-        <NavLink
-          to="/"
-          className={styles.mainMenuLogoItem}
-        >
-          <Logo className={styles.headerLogo}/>
-        </NavLink>
-        <LeftArrowBtn onClick={()=>setIsShowMenu(prev=>!prev)}  className={styles.headerContainerLeftBtn}/>
-        <div className={styles.mainMenuContainer}>
-          <p className={styles.mainMenuTitle}>MAIN MENU</p>
+      <div className={styles.menuContainerFixed}>
+        <nav>
           <NavLink
             to="/"
-          className={styles.mainMenuNavItem}
+            className={styles.mainMenuLogoItem}
           >
-            <div className={styles.mainMenuItem}>
-              <DashboardIcon className={styles.mainMenuItemDashboardIcon}/>
-              <span className={styles.mainMenuItemText}>Dashboard</span>
-            </div>
-
+            <Logo className={styles.headerLogo}/>
           </NavLink>
-          <NavLink
-            to="/"
-            className={styles.mainMenuNavItem}
-          >
-            <div className={styles.mainMenuItem}>
-              <ChatIcon className={styles.mainMenuItemDashboardIcon}/>
-              <span className={styles.mainMenuItemText}>Inbox</span>
-            </div>
+          <LeftArrowBtn onClick={()=>setIsShowMenu(prev=>!prev)}  className={styles.headerContainerLeftBtn}/>
+          <div className={styles.mainMenuContainer}>
+            <p className={styles.mainMenuTitle}>MAIN MENU</p>
+            <NavLink
+              to="/"
+              className={styles.mainMenuNavItem}
+            >
+              <div className={styles.mainMenuItem}>
+                <DashboardIcon className={styles.mainMenuItemDashboardIcon}/>
+                <span className={styles.mainMenuItemText}>Dashboard</span>
+              </div>
 
-          </NavLink>
+            </NavLink>
+            <NavLink
+              to="/"
+              className={styles.mainMenuNavItem}
+            >
+              <div className={styles.mainMenuItem}>
+                <ChatIcon className={styles.mainMenuItemDashboardIcon}/>
+                <span className={styles.mainMenuItemText}>Inbox</span>
+              </div>
+
+            </NavLink>
+
+          </div>
+          <div className={styles.secondaryMenuContainer}>
+            <p className={styles.mainMenuTitle}>Workspace</p>
+            <NavLink
+              to="/"
+              className={styles.mainMenuNavItem}
+            >
+              <div className={styles.mainMenuItem}>
+                <AccountsIcon className={styles.mainMenuItemDashboardIcon}/>
+                <span className={styles.mainMenuItemText}>Accounts</span>
+              </div>
+
+            </NavLink>
+            <NavLink
+              to="/"
+              className={styles.mainMenuNavItem}
+            >
+              <div className={styles.mainMenuItem}>
+                <ScheduleIcon className={styles.mainMenuItemDashboardIcon}/>
+                <span className={styles.mainMenuItemText}>Schedule Post</span>
+              </div>
+
+            </NavLink>
+            <NavLink
+              to="/"
+              className={styles.mainMenuNavItem}
+            >
+              <div className={styles.mainMenuItem}>
+                <SearchIcon className={styles.mainMenuItemDashboardIcon}/>
+                <span className={styles.mainMenuItemText}>Communities</span>
+              </div>
+
+            </NavLink>
+            <NavLink
+              to="/"
+              className={styles.mainMenuNavItem}
+            >
+              <div className={styles.mainMenuItem}>
+                <AnalyticsLine className={styles.mainMenuItemDashboardIcon}/>
+                <span className={styles.mainMenuItemText}> Analytics</span>
+              </div>
+
+            </NavLink>
+
+          </div>
+          <div className={styles.thirdMenuContainer}>
+            <p className={styles.mainMenuTitle}>General</p>
+            <NavLink
+              to="/"
+              className={styles.mainMenuNavItem}
+            >
+              <div className={styles.mainMenuItem}>
+                <FolderIcon className={styles.mainMenuItemDashboardIcon}/>
+                <span className={styles.mainMenuItemText}>File & Folders</span>
+              </div>
+
+            </NavLink>
+            <NavLink
+              to="/"
+              className={styles.mainMenuNavItem}
+            >
+              <div className={styles.mainMenuItem}>
+                <SettingsIcon className={styles.mainMenuItemDashboardIcon}/>
+                <span className={styles.mainMenuItemText}>Settings</span>
+              </div>
+            </NavLink>
+          </div>
+
+
+        </nav>
+        <div className={styles.helpSectionContainer}>
+          <div className={styles.circleBg}>
+            <CirleIcon/>
+          </div>
+
+          <p className={styles.helpSectionTitle}> Need Help with <span className={styles.helpSectionBoldWord}>Dash</span>?</p>
+
+          <button className={styles.helpSectionButton}>
+            Go to help center
+          </button>
 
         </div>
-        <div className={styles.secondaryMenuContainer}>
-          <p className={styles.mainMenuTitle}>Workspace</p>
-          <NavLink
-            to="/"
-            className={styles.mainMenuNavItem}
-          >
-            <div className={styles.mainMenuItem}>
-              <AccountsIcon className={styles.mainMenuItemDashboardIcon}/>
-              <span className={styles.mainMenuItemText}>Accounts</span>
-            </div>
-
-          </NavLink>
-          <NavLink
-            to="/"
-            className={styles.mainMenuNavItem}
-          >
-            <div className={styles.mainMenuItem}>
-              <ScheduleIcon className={styles.mainMenuItemDashboardIcon}/>
-              <span className={styles.mainMenuItemText}>Schedule Post</span>
-            </div>
-
-          </NavLink>
-          <NavLink
-            to="/"
-            className={styles.mainMenuNavItem}
-          >
-            <div className={styles.mainMenuItem}>
-              <SearchIcon className={styles.mainMenuItemDashboardIcon}/>
-              <span className={styles.mainMenuItemText}>Communities</span>
-            </div>
-
-          </NavLink>
-          <NavLink
-            to="/"
-            className={styles.mainMenuNavItem}
-          >
-            <div className={styles.mainMenuItem}>
-              <AnalyticsLine className={styles.mainMenuItemDashboardIcon}/>
-              <span className={styles.mainMenuItemText}> Analytics</span>
-            </div>
-
-          </NavLink>
-
-        </div>
-        <div className={styles.thirdMenuContainer}>
-          <p className={styles.mainMenuTitle}>General</p>
-          <NavLink
-            to="/"
-            className={styles.mainMenuNavItem}
-          >
-            <div className={styles.mainMenuItem}>
-              <FolderIcon className={styles.mainMenuItemDashboardIcon}/>
-              <span className={styles.mainMenuItemText}>File & Folders</span>
-            </div>
-
-          </NavLink>
-          <NavLink
-            to="/"
-            className={styles.mainMenuNavItem}
-          >
-            <div className={styles.mainMenuItem}>
-              <SettingsIcon className={styles.mainMenuItemDashboardIcon}/>
-              <span className={styles.mainMenuItemText}>Settings</span>
-            </div>
-          </NavLink>
-        </div>
-
-      </nav>
-
-      <div className={styles.helpSectionContainer}>
-        <div className={styles.circleBg}>
-             <CirleIcon/>
-        </div>
-
-        <p className={styles.helpSectionTitle}> Need Help with <span className={styles.helpSectionBoldWord}>Dash</span>?</p>
-
-        <button className={styles.helpSectionButton}>
-          Go to help center
-        </button>
 
       </div>
+
+
+
 
 
     </div>

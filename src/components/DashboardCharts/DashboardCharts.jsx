@@ -14,7 +14,11 @@ import {ReactComponent as LineDiagramm} from "../../assets/lineDiagramm.svg";
 import {ReactComponent as SmallArrowRight} from "../../assets/arrowRightSmall.svg";
 import {ReactComponent as ScheduleChart} from "../../assets/scheduleChart.svg";
 import {ReactComponent as DeskIcon} from "../../assets/DeskIcon.svg";
-import {ReactComponent as AudienceTopic} from "../../assets/AudienceChart.svg";
+import {ReactComponent as AudienceUserAvatar} from "../../assets/Ellipse 105.svg";
+import {ReactComponent as LikeIcon} from "../../assets/bx_bxs-like.svg";
+import {ReactComponent as CommentIcon} from "../../assets/bx_bxs-comment-dots.svg";
+import {ReactComponent as ShareIcon} from "../../assets/bx_bxs-share.svg";
+import {ReactComponent as MainChart} from "../../assets/mainChart.svg";
 import styles from './DashboardCharts.module.scss'
 
 const DashboardCharts = () => {
@@ -35,7 +39,10 @@ const DashboardCharts = () => {
        </div>
        <div className={styles.contentReachSummaryMainSectionContainer}>
          <div className={styles.contentReachSummaryMainSectionChart}>
-         <h1>Hello</h1> <h1>Hello</h1> <h1>Hello</h1> <h1>Hello</h1> <h1>Hello</h1> <h1>Hello</h1> <h1>Hello</h1>
+           <div className={styles.contentReachSummaryMainChartContainer}>
+             <MainChart/>
+           </div>
+
          </div>
          <div className={styles.contentReachSummaryMainSectionSecondaryChart}>
            <div className={styles.contentReachSummaryMainSectionSecondaryChartMainInformation}>
@@ -83,7 +90,7 @@ const DashboardCharts = () => {
           </div>
           <div className={styles.demographicDiagramAgenda}>
             <span className={styles.demographicDiagramAgendaItem}>
-              <SmallBlueCircle className={styles.demographicDiagramAgendaItemColor}/> Male (68%)</span>
+              <SmallBlueCircle className={styles.demographicDiagramAgendaItemColor}/>Male (68%)</span>
             <span  className={styles.demographicDiagramAgendaItem}> <SmallBlueCircle2 className={styles.demographicDiagramAgendaItemColor}/> Female (38%)</span>
             <span  className={styles.demographicDiagramAgendaItem}> <SmallBlueCircle3 className={styles.demographicDiagramAgendaItemColor}/> Other (12%)</span>
           </div>
@@ -191,7 +198,59 @@ const DashboardCharts = () => {
 
           </div>
           <div className={styles.contentScheduleAgendaChart}>
-            <ScheduleChart className={styles.contentScheduleAgendaChartImg} />
+            <div className={styles.contentScheduleAgendaChartCalendarContainer}>
+              <div className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>6</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Fri</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>7</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Sat</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>8</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Sun</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>9</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Mon</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>10</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Tue</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>11</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Wed</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>12</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Thu</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>13</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Fri</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>14</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Sat</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>15</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Sun</div>
+              </div>
+              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>16</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Mon</div>
+              </div>
+
+            </div>
+            <div className={styles.contentScheduleAgendaChartLine}></div>
+            <div className={styles.contentScheduleAgendaChartLine}></div>
+            <div className={styles.contentScheduleAgendaChartLine}></div>
+            <div className={styles.contentScheduleAgendaChartLine}></div>
+
+            {/*<ScheduleChart className={styles.contentScheduleAgendaChartImg} />*/}
           </div>
 
         </div>
@@ -199,7 +258,38 @@ const DashboardCharts = () => {
       </div>
 
       <div className={styles.mostEnganggeAudienceContainer}>
-       <AudienceTopic className={styles.mostEnganggeAudienceImg}/>
+       {/*<AudienceTopic className={styles.mostEnganggeAudienceImg}/>*/}
+        <div className={styles.contentDemographicHeadLogoTitle}>
+          <ChartIcon/>
+          <h2 className={styles.contentDemographicTitle}>Most Engangge Audience</h2>
+        </div>
+        <div className={styles.mostEngaggeUserTopicsContainer}>
+          <div className={styles.mostEngangeUserTopic}>
+             <AudienceUserAvatar className={styles.mostEngangeUserTopicAvatar}/>
+            <div className={styles.mostEngangeUserTopicInfoContainer}>
+              <p className={styles.mostEngangeUserTopicInfoUserName}>Margareth Zend</p>
+              <div className={styles.mostEngangeUserTopicInfoSocialContainer}>
+                <div className={styles.mostEngangeUserTopicInfoSocialInfo}> <LikeIcon className={styles.mostEngangeUserTopicIcon}/> 300 likes</div>
+                <div className={styles.mostEngangeUserTopicInfoSocialInfo}> <CommentIcon className={styles.mostEngangeUserTopicIcon}/> 120 comments</div>
+                <div className={styles.mostEngangeUserTopicInfoSocialInfo}> <ShareIcon className={styles.mostEngangeUserTopicIcon}/> 86 shares</div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.mostEngangeUserTopic}>
+            <AudienceUserAvatar className={styles.mostEngangeUserTopicAvatar}/>
+            <div className={styles.mostEngangeUserTopicInfoContainer}>
+              <p className={styles.mostEngangeUserTopicInfoUserName}>Margareth Zend</p>
+              <div className={styles.mostEngangeUserTopicInfoSocialContainer}>
+                <div className={styles.mostEngangeUserTopicInfoSocialInfo}> <LikeIcon className={styles.mostEngangeUserTopicIcon}/> 300 likes</div>
+                <div className={styles.mostEngangeUserTopicInfoSocialInfo}> <CommentIcon className={styles.mostEngangeUserTopicIcon}/> 120 comments</div>
+                <div className={styles.mostEngangeUserTopicInfoSocialInfo}> <ShareIcon className={styles.mostEngangeUserTopicIcon}/> 86 shares</div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
       </div>
     </div>
   );
