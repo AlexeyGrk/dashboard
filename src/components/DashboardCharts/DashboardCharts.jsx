@@ -18,6 +18,8 @@ import {ReactComponent as LikeIcon} from "../../assets/bx_bxs-like.svg";
 import {ReactComponent as CommentIcon} from "../../assets/bx_bxs-comment-dots.svg";
 import {ReactComponent as ShareIcon} from "../../assets/bx_bxs-share.svg";
 import {ReactComponent as MegaphoneIcon} from "../../assets/ph_megaphone-bold.svg";
+import {ReactComponent as NoteIcon} from "../../assets/ic_baseline-post-add.svg";
+import {ReactComponent as NoteWithPanIcon} from "../../assets/bx_bx-edit.svg";
 import {ReactComponent as MainChart} from "../../assets/mainChart.svg";
 import styles from './DashboardCharts.module.scss'
 
@@ -160,7 +162,7 @@ const DashboardCharts = () => {
         </div>
         <div className={styles.contentScheduleAgendaContainer}>
           <div className={styles.contentScheduleAgendaLeftInfo}>
-            <h3>Upcoming Event</h3>
+            <h3 className={styles.contentScheduleAgendaLeftInfoMainTitle}>Upcoming Event</h3>
 
             <div className={styles.contentScheduleAgendaLeftInfoContainer} >
               <div className={styles.contentScheduleAgendaLeftInfoItem}>
@@ -199,6 +201,11 @@ const DashboardCharts = () => {
           </div>
           <div className={styles.contentScheduleAgendaChart}>
             <div className={styles.contentScheduleAgendaChartCalendarContainer}>
+
+              <div className={styles.contentScheduleAgendaChartCalendarItem}>
+                <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>5</div>
+                <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Thu</div>
+              </div>
               <div className={styles.contentScheduleAgendaChartCalendarItem}>
                 <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>6</div>
                 <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Fri</div>
@@ -223,7 +230,7 @@ const DashboardCharts = () => {
                 <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>11</div>
                 <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Wed</div>
               </div>
-              <div  className={styles.contentScheduleAgendaChartCalendarItem}>
+              <div  className={styles.contentScheduleAgendaChartCalendarItemActive}>
                 <div className={styles.contentScheduleAgendaChartCalendarItemNumber}>12</div>
                 <div  className={styles.contentScheduleAgendaChartCalendarItemDay}>Thu</div>
               </div>
@@ -261,12 +268,12 @@ const DashboardCharts = () => {
               </div>
             </div>
             <div className={styles.contentScheduleAgendaChartLine}>
-              <div className={styles.contentScheduleAgendaChartBlueEvent}>
+              <div className={styles.contentScheduleAgendaChartPurpleEvent}>
                 <div className={styles.contentScheduleAgendaChartBlueEventSubContainer}>
-                  <MegaphoneIcon/>
+                  <NoteIcon/>
                   <div className={styles.contentScheduleAgendaChartBlueEventText}>
-                    <span  className={styles.contentScheduleAgendaChartBlueEventTextName}>New Store Product Campaign</span>
-                    <span  className={styles.contentScheduleAgendaChartBlueEventTextCategory}>Marketing</span>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextName}>Post A Travel Poster </span>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextCategory}>Posting</span>
                   </div>
                 </div>
 
@@ -275,13 +282,13 @@ const DashboardCharts = () => {
 
               </div>
             </div>
-            <div className={styles.contentScheduleAgendaChartLine}>
-              <div className={styles.contentScheduleAgendaChartBlueEvent}>
+            <div className={styles.contentScheduleAgendaChartLinePink}>
+              <div className={styles.contentScheduleAgendaChartPinkEvent}>
                 <div className={styles.contentScheduleAgendaChartBlueEventSubContainer}>
-                  <MegaphoneIcon/>
+                  <NoteWithPanIcon/>
                   <div className={styles.contentScheduleAgendaChartBlueEventText}>
-                    <span  className={styles.contentScheduleAgendaChartBlueEventTextName}>New Store Product Campaign</span>
-                    <span  className={styles.contentScheduleAgendaChartBlueEventTextCategory}>Marketing</span>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextName}>Mars Travel Manual for...</span>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextCategory}>Drafting</span>
                   </div>
                 </div>
 
@@ -290,8 +297,8 @@ const DashboardCharts = () => {
 
               </div>
             </div>
-            <div className={styles.contentScheduleAgendaChartLine}>
-            </div>
+            {/*<div className={styles.contentScheduleAgendaChartLine}>*/}
+            {/*</div>*/}
 
             {/*<ScheduleChart className={styles.contentScheduleAgendaChartImg} />*/}
           </div>
