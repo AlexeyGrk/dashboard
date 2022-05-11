@@ -17,6 +17,7 @@ import {ReactComponent as AudienceUserAvatar} from "../../assets/Ellipse 105.svg
 import {ReactComponent as LikeIcon} from "../../assets/bx_bxs-like.svg";
 import {ReactComponent as CommentIcon} from "../../assets/bx_bxs-comment-dots.svg";
 import {ReactComponent as ShareIcon} from "../../assets/bx_bxs-share.svg";
+import {ReactComponent as MegaphoneIcon} from "../../assets/ph_megaphone-bold.svg";
 import {ReactComponent as MainChart} from "../../assets/mainChart.svg";
 import styles from './DashboardCharts.module.scss'
 
@@ -244,10 +245,66 @@ const DashboardCharts = () => {
               </div>
 
             </div>
-            <div className={styles.contentScheduleAgendaChartLine}></div>
-            <div className={styles.contentScheduleAgendaChartLine}></div>
-            <div className={styles.contentScheduleAgendaChartLine}></div>
-            <div className={styles.contentScheduleAgendaChartLine}></div>
+            <div className={styles.contentScheduleAgendaChartLine}>
+              <div className={styles.contentScheduleAgendaChartBlueEvent}>
+                <div className={styles.contentScheduleAgendaChartBlueEventSubContainer}>
+                  <MegaphoneIcon/>
+                  <div className={styles.contentScheduleAgendaChartBlueEventText}>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextName}>New Store Product Campaign</span>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextCategory}>Marketing</span>
+                  </div>
+                </div>
+
+
+                <AudienceUserAvatar className={styles.mostEngangeUserTopicAvatar}/>
+
+              </div>
+            </div>
+            <div className={styles.contentScheduleAgendaChartLine}>
+              <div className={styles.contentScheduleAgendaChartBlueEvent}>
+                <div className={styles.contentScheduleAgendaChartBlueEventSubContainer}>
+                  <MegaphoneIcon/>
+                  <div className={styles.contentScheduleAgendaChartBlueEventText}>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextName}>New Store Product Campaign</span>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextCategory}>Marketing</span>
+                  </div>
+                </div>
+
+
+                <AudienceUserAvatar className={styles.mostEngangeUserTopicAvatar}/>
+
+              </div>
+            </div>
+            <div className={styles.contentScheduleAgendaChartLine}>
+              <div className={styles.contentScheduleAgendaChartBlueEvent}>
+                <div className={styles.contentScheduleAgendaChartBlueEventSubContainer}>
+                  <MegaphoneIcon/>
+                  <div className={styles.contentScheduleAgendaChartBlueEventText}>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextName}>New Store Product Campaign</span>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextCategory}>Marketing</span>
+                  </div>
+                </div>
+
+
+                <AudienceUserAvatar className={styles.mostEngangeUserTopicAvatar}/>
+
+              </div>
+            </div>
+            <div className={styles.contentScheduleAgendaChartLine}>
+              <div className={styles.contentScheduleAgendaChartBlueEvent}>
+                <div className={styles.contentScheduleAgendaChartBlueEventSubContainer}>
+                  <MegaphoneIcon/>
+                  <div className={styles.contentScheduleAgendaChartBlueEventText}>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextName}>New Store Product Campaign</span>
+                    <span  className={styles.contentScheduleAgendaChartBlueEventTextCategory}>Marketing</span>
+                  </div>
+                </div>
+
+
+                <AudienceUserAvatar className={styles.mostEngangeUserTopicAvatar}/>
+
+              </div>
+            </div>
 
             {/*<ScheduleChart className={styles.contentScheduleAgendaChartImg} />*/}
           </div>
