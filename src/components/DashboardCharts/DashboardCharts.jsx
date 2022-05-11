@@ -291,19 +291,6 @@ const DashboardCharts = () => {
               </div>
             </div>
             <div className={styles.contentScheduleAgendaChartLine}>
-              <div className={styles.contentScheduleAgendaChartBlueEvent}>
-                <div className={styles.contentScheduleAgendaChartBlueEventSubContainer}>
-                  <MegaphoneIcon/>
-                  <div className={styles.contentScheduleAgendaChartBlueEventText}>
-                    <span  className={styles.contentScheduleAgendaChartBlueEventTextName}>New Store Product Campaign</span>
-                    <span  className={styles.contentScheduleAgendaChartBlueEventTextCategory}>Marketing</span>
-                  </div>
-                </div>
-
-
-                <AudienceUserAvatar className={styles.mostEngangeUserTopicAvatar}/>
-
-              </div>
             </div>
 
             {/*<ScheduleChart className={styles.contentScheduleAgendaChartImg} />*/}
