@@ -25,7 +25,8 @@ const Menu = ({setIsShowMenu}) => {
           >
             <Logo className={styles.headerLogo}/>
           </NavLink>
-          <LeftArrowBtn onClick={()=>setIsShowMenu(prev=>!prev)}  className={styles.headerContainerLeftBtn}/>
+          <button onClick={()=>setIsShowMenu(prev=>!prev)}  className={styles.headerContainerLeftBtn}> <LeftArrowBtn /></button>
+
           <div className={styles.mainMenuContainer}>
             <p className={styles.mainMenuTitle}>MAIN MENU</p>
             <NavLink
