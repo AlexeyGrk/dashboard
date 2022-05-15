@@ -10,7 +10,7 @@ const DashBoardHeader = () => {
      <div className={styles.searchContainer}>
        <h1 className={styles.headerTitle}>Dashboard</h1>
        <div className={styles.secondaryInfoContainer}>
-         <label>
+         <label className={styles.secondaryInfoSearchInputLabel}>
            <input type='text' placeholder='Search...' className={styles.searchInput}/>
          </label>
          <div className={styles.vl}/>

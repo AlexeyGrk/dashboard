@@ -42,7 +42,7 @@ const DashboardCharts = () => {
        <div className={styles.contentReachSummaryMainSectionContainer}>
          <div className={styles.contentReachSummaryMainSectionChart}>
            <div className={styles.contentReachSummaryMainChartContainer}>
-             <MainChart/>
+             <MainChart className={styles.contentReachSummaryMainChartImage}/>
            </div>
 
          </div>
