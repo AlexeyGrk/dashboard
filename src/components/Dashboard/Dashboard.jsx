@@ -11,10 +11,11 @@ const Dashboard = () => {
   const { width } = useWindowDimensions();
 
   useEffect(()=>{
+    console.log('render')
     if(width>1023){
       setIsShowMenu(true)
     }
-  },[])
+  },[width])
 
   return (
     <div className={styles.dashboardMainConitainer}>
