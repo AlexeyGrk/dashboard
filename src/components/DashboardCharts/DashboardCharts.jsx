@@ -10,7 +10,6 @@ import {ReactComponent as SmallBlueCircle3} from "../../assets/smallCircleBl3.sv
 import {ReactComponent as SmallPinkCircle} from "../../assets/pinkSmallCircle.svg";
 import {ReactComponent as SmallGreenCircle} from "../../assets/greenSmallCircle.svg";
 import {ReactComponent as SmallPurpleCircle} from "../../assets/purpleSmallCircle.svg";
-import {ReactComponent as LineDiagramm} from "../../assets/lineDiagramm.svg";
 import {ReactComponent as SmallArrowRight} from "../../assets/arrowRightSmall.svg";
 import {ReactComponent as DeskIcon} from "../../assets/DeskIcon.svg";
 import {ReactComponent as AudienceUserAvatar} from "../../assets/Ellipse 105.svg";
@@ -105,7 +104,9 @@ const DashboardCharts = () => {
         </div>
         <div className={styles.demographicAudienceInfoContainer}>
           <h3>Audience Age</h3>
-          <LineDiagramm className={styles.demographicAudienceInfoDiagramm}/>
+          <div className={styles.demographicAudienceInfoCustomDiagramm}>
+          </div>
+          {/*<LineDiagramm className={styles.demographicAudienceInfoDiagramm}/>*/}
 
           <div className={styles.demographicAudienceInfoItemMainContainer}>
             <div className={styles.demographicAudienceInfoItemContainer}>
