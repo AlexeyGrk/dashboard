@@ -1,7 +1,8 @@
 @import "./src/sass/variables";
 @import "./src/sass/mixins";
 .headerContainer{
-  position: relative;
+  position: sticky;
+  top: 0;
   background-color: $white;
   padding: 25px 60px;
   border-bottom: 1px solid rgba(218, 218, 218, 0.5);

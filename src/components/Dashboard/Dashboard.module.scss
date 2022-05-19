@@ -2,6 +2,7 @@
 @import "./src/sass/variables";
 .dashboardMainConitainer{
   display: flex;
+  //height: 100vh;
 
 
   //height: 100%;
@@ -11,7 +12,7 @@
 }
 .dashboardMainConitainerShowMenuBtn{
   @include btn-reset();
-  position: absolute;
+  position: fixed;
   left: 5px;
   top: 25px;
   z-index: 3;

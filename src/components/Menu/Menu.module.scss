@@ -1,6 +1,9 @@
 @import "./src/sass/variables";
 @import "./src/sass/mixins";
 .menuContainer{
+  //@include media-max(767){
+  // display: none;
+  //}
   position: relative;
   padding: 24px 0 24px 15px;
   width: 100%;
@@ -11,7 +14,7 @@
 }
 .menuContainerFixed{
   position: sticky;
-  top: 20px;
+  top: 30px;
 }
 
 .headerLogo{
@@ -24,7 +27,7 @@
   height: 40px;
   border-radius: 50%;
   right: -20px;
-  z-index: 2;
+  //z-index: 2;
   cursor: pointer;
 }
 //animation
