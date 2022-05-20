@@ -13,7 +13,6 @@ const Dashboard = () => {
 
   useEffect(()=>{
     if(width>1023){
-      console.log('render')
       setIsShowMenu(true)
     }
   },[width])

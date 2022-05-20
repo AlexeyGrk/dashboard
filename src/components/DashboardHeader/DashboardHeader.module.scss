@@ -51,6 +51,7 @@
 }
 
 .searchInput{
+  font-family: $primaryFontMedium;
   max-width: 169px;
   all: unset;
   padding: 10px 0 10px 40px;
@@ -58,6 +59,7 @@
   border: 1px solid #E3E8F1;
   border-radius: 8px;
   &::placeholder{
+    font-family: $primaryFontMedium;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
